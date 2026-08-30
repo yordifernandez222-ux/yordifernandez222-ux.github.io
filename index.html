@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--Metadatos-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nortia Digital | Agencia de Servicios Empresariales</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ENCABEZADO-->
+  <header class="encabezado">
+    <nav class="navbar navbar-expand-lg contenedor">
+      <a class="marca" href="#inicio">Nortia<span class="marca-punto">.</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <ul class="navbar-nav ms-auto lista-nav collapse navbar-collapse" id="menu">
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#precios">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Trabajos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="inicio">
+
+    <!--INICIO-->
+    <section class="inicio contenedor" id="inicio">
+      <header class="inicio-texto">
+        <p class="etiqueta">Agencia de servicios digitales</p>
+        <h1>Creamos páginas web que ayudan a crecer tu negocio.</h1>
+        <p class="inicio-parrafo">
+          Diseño, desarrollo y estrategia digital para empresas que buscan una
+          presencia web clara, profesional y fácil de mantener.
+        </p>
+        <ul class="inicio-botones lista-simple">
+          <li><a href="#contacto" class="boton boton-primario">Solicitar cotización</a></li>
+          <li><a href="#servicios" class="boton boton-secundario">Ver servicios</a></li>
+        </ul>
+      </header>
+
+      <aside class="inicio-tarjeta">
+        <h2>Lo que incluye</h2>
+        <ul class="lista-simple">
+          <li>Diseño 100% responsivo</li>
+          <li>Formulario de contacto</li>
+          <li>Optimización básica de velocidad</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="seccion" id="servicios">
+      <header class="contenedor titulo-seccion">
+        <h2>Nuestros servicios</h2>
+        <p>Tres áreas de trabajo para acompañar el crecimiento digital de tu empresa.</p>
+      </header>
+
+      <ul class="row contenedor g-4 lista-simple">
+        <li class="col-md-4 col-sm-6">
+          <article class="tarjeta">
+            <h3>Diseño Web</h3>
+            <p>Sitios y landing pages responsivas, rápidas y pensadas para convertir visitas en clientes.</p>
+          </article>
+        </li>
+        <li class="col-md-4 col-sm-6">
+          <article class="tarjeta">
+            <h3>Identidad de Marca</h3>
+            <p>Logotipo, colores y tipografía coherentes con lo que tu empresa quiere transmitir.</p>
+          </article>
+        </li>
+        <li class="col-md-4 col-sm-6">
+          <article class="tarjeta">
+            <h3>Marketing Digital</h3>
+            <p>Contenido, redes sociales y campañas con resultados medibles.</p>
+          </article>
+        </li>
+      </ul>
+
+      <article class="contenedor nota-blog">
+        <h3>¿Por qué necesitas una landing page?</h3>
+        <p>
+          Es el primer contacto entre tu empresa y un cliente potencial. Una buena landing
+          page comunica en segundos qué haces, por qué confiar en ti y cómo contactarte.
+        </p>
+      </article>
+    </section>
+
+    <!--PRECIO -->
+    <section class="seccion seccion-clara" id="precios">
+      <header class="contenedor titulo-seccion">
+        <h2>Planes de servicio</h2>
+        <p>Elige el nivel de acompañamiento que tu empresa necesita.</p>
+      </header>
+
+      <figure class="tabla-responsiva contenedor">
+        <table class="tabla-precios">
+          <caption>Comparativo de planes mensuales de Nortia Digital</caption>
+          <thead>
+            <tr>
+              <th scope="col">Plan</th>
+              <th scope="col">Ideal para</th>
+              <th scope="col">Incluye</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Esencial</th>
+              <td>Emprendimientos</td>
+              <td>Landing page de 1 página + formulario de contacto</td>
+              <td>$450.000 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Profesional</th>
+              <td>Pymes en crecimiento</td>
+              <td>Sitio de hasta 5 secciones + identidad básica</td>
+              <td>$980.000 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Empresarial</th>
+              <td>Empresas consolidadas</td>
+              <td>Sitio completo + marca + campaña de lanzamiento</td>
+              <td>$2.100.000 COP</td>
+            </tr>
+          </tbody>
+        </table>
+      </figure>
+    </section>
+
+    <!--GALERÍA-->
+    <section class="seccion" id="galeria">
+      <header class="contenedor titulo-seccion">
+        <h2>Trabajos recientes</h2>
+        <p>Una muestra de proyectos entregados a nuestros clientes.</p>
+      </header>
+
+      <ul class="row contenedor g-4 lista-simple">
+        <li class="col-md-4 col-sm-6">
+          <figure class="elemento-galeria">
+           <img src="/img/captura1.png.png" alt="Rediseño web para kick" class="miniatura">
+            <figcaption>Rediseño web · kick</figcaption>
+          </figure>
+        </li>
+        <li class="col-md-4 col-sm-6">
+          <figure class="elemento-galeria">
+           <img src="/img/logo-cafe.jpeg.jpeg" alt="Identidad de marca para Coffee+vision" class="miniatura">
+            <figcaption>Identidad de marca</figcaption>
+          </figure>
+        </li>
+        <li class="col-md-4 col-sm-6">
+          <figure class="elemento-galeria">
+            <img src="/img/captura2.png.png" alt="Landing page para Clínica Vitalis" class="miniatura">
+            <figcaption>Landing page · Clínica Vitalis</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <!--CONTACTO-->
+    <section class="seccion seccion-clara" id="contacto">
+      <header class="contenedor titulo-seccion">
+        <h2>Hablemos de tu proyecto</h2>
+        <p>Cuéntanos qué necesitas y te responderemos en menos de 24 horas.</p>
+      </header>
+
+      <form class="contenedor formulario" action="#" method="post">
+        <fieldset class="row g-3">
+          <legend class="visually-hidden">Datos de contacto</legend>
+          <p class="col-md-6">
+            <label for="nombre" class="etiqueta-campo">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </p>
+          <p class="col-md-6">
+            <label for="correo" class="etiqueta-campo">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" placeholder="tucorreo@empresa.com" required>
+          </p>
+        </fieldset>
+
+        <fieldset class="grupo-radios">
+          <legend class="etiqueta-campo">¿Qué servicio te interesa?</legend>
+          <ul class="lista-simple">
+            <li class="opcion">
+              <input type="radio" name="servicio" id="servicioWeb" value="diseno-web" checked>
+              <label for="servicioWeb">Diseño web</label>
+            </li>
+            <li class="opcion">
+              <input type="radio" name="servicio" id="servicioMarca" value="marca">
+              <label for="servicioMarca">Identidad de marca</label>
+            </li>
+            <li class="opcion">
+              <input type="radio" name="servicio" id="servicioMkt" value="marketing">
+              <label for="servicioMkt">Marketing digital</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <p class="opcion">
+          <input type="checkbox" id="boletin" name="boletin" value="si">
+          <label for="boletin">Quiero recibir novedades de Nortia por correo</label>
+        </p>
+
+        <p class="campo-mensaje">
+          <label for="mensaje" class="etiqueta-campo">Cuéntanos sobre tu proyecto</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí los detalles..."></textarea>
+        </p>
+
+        <button type="submit" class="boton boton-primario">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie contenedor">
+  <p>© 2026 Nortia Digital.</p>
+  <nav aria-label="Enlaces del pie de página">
+    <ul class="lista-simple enlaces-pie">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#precios">Planes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
