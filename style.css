@@ -1,0 +1,391 @@
+
+/* Reset y modelo de caja */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Quita viñetas y márgenes*/
+.lista-simple {
+  list-style: none;
+}
+
+/* Utilidad de ancho centrado */
+.contenedor {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Encabezado */
+.encabezado {
+  background-color: #0F172A;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.marca {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.marca-punto {
+  color: #06b6d4;
+}
+
+.lista-nav .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 8px 14px;
+}
+
+.lista-nav .nav-link:hover {
+  color: #80deea;
+}
+
+/* ---------- Botones ---------- */
+.boton {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.boton-primario {
+  background-color: #2962ff;
+  color: #ffffff;
+}
+
+.boton-primario:hover {
+  background-color: #1e4bd8;
+  color: #ffffff;
+}
+
+.boton-secundario {
+  background-color: transparent;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+}
+
+.boton-secundario:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Sección de inicio */
+.inicio {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: #f4f6f9;
+}
+
+.inicio-texto {
+  flex: 1 1 460px;
+}
+
+.etiqueta {
+
+  color: #2962ff;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+.inicio-texto h1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 18px;
+}
+
+.inicio-parrafo {
+  color: #4a5568;
+  max-width: 460px;
+  margin-bottom: 28px;
+}
+
+.inicio-botones {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.inicio-tarjeta {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background-color: #1a1a1a;
+  border: 1px solid #0F172A;
+  border-radius: 8px;
+  padding: 28px;
+  color: #ffffff;
+}
+
+.inicio-tarjeta h2 {
+  color: #ffffff;
+}
+
+.inicio-tarjeta li {
+  border-top: 1px solid #0F172A;
+  color: #f9fbfe;
+}
+/* Secciones */
+.seccion {
+  padding: 64px 0;
+}
+
+.seccion-clara {
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.titulo-seccion h2 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  margin-bottom: 8px;
+}
+
+.titulo-seccion p {
+  color: #4a5568;
+}
+
+/*Tarjetas de servicio*/
+.tarjeta {
+  background-color: #ffffff;
+  border: 1px solid #0F172A;
+  color: #1a1a1a;
+  border-radius: 8px;
+  padding: 24px;
+  height: 100%;
+}
+
+.tarjeta h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.tarjeta p {
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+.nota-blog {
+  margin-top: 40px;
+  background-color: #0F172A;
+  color: #fbfbfc;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.nota-blog h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Tabla de precios */
+.tabla-precios {
+  background-color: #ffffff;
+  border: 1px solid #0F172A;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabla-precios caption {
+  caption-side: top;
+  text-align: left;
+  color: #4a5568;
+  padding-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.tabla-precios thead th {
+  background-color: #0F172A;
+  color: #ffffff;
+  padding: 12px 16px;
+  font-weight: 500;
+}
+
+.tabla-precios tbody td,
+.tabla-precios tbody th {
+  padding: 14px 16px;
+  border-top: 1px solid #0F172A;
+}
+
+.tabla-precios tbody th {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Galería */
+.elemento-galeria {
+  text-align: center;
+}
+
+.miniatura {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.miniatura-a { background-color: #006064; }
+.miniatura-b { background-color: #2962ff; }
+.miniatura-c { background-color: #4a5568; }
+
+.elemento-galeria figcaption {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+/* Formulario de contacto */
+.formulario {
+  max-width: 600px;
+  background-color: #ffffff;
+  border: 1px solid #0F172A;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.etiqueta-campo {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.formulario .form-control {
+  border: 1px solid #0F172A;
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 100%;
+}
+
+.formulario .form-control:focus {
+  outline: none;
+  border-color: #2962ff;
+  box-shadow: 0 0 0 0.2rem rgba(41, 98, 255, 0.25);
+}
+
+.formulario fieldset {
+  border: none;
+  margin-top: 20px;
+}
+
+.formulario fieldset:first-child {
+  margin-top: 0;
+}
+
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+}
+
+.campo-mensaje {
+  margin-top: 20px;
+}
+
+.formulario button {
+  margin-top: 24px;
+}
+
+/*  Pie de página */
+.pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 0.9rem;
+  background-color: #0F172A;
+  color: #ffffff;
+  
+  box-shadow: 0 0 0 100vw #0F172A;
+  clip-path: inset(0 -100vw);
+}
+.enlaces-pie {
+  display: flex;
+  gap: 18px;
+}
+
+.enlaces-pie a:hover {
+  color: #2962ff;
+}
+
+/* MEDIA QUERIES*/
+@media (max-width: 768px) {
+  .inicio {
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .inicio-parrafo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inicio-botones {
+    justify-content: center;
+  }
+
+  .inicio-tarjeta {
+    margin: 0 auto;
+  }
+
+  .seccion {
+    padding: 48px 0;
+  }
+
+  .pie {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .formulario {
+    padding: 20px;
+  }
+}
